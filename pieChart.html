@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script
+        src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.0/chart.min.js"
+        integrity="sha512-asxKqQghC1oBShyhiBwA+YgotaSYKxGP1rcSYTDrB0U6DxwlJjU59B67U8+5/++uFjcuVM8Hh5cokLjZlhm3Vg=="
+        crossOrigin="anonymous"
+        referrerpolicy="no-referrer">
+</script>
+<div style="width: 700px">
+  <canvas id="myChart"></canvas>
+</div>
+<script>
+  var ctx = document.getElementById('myChart');
+  var myChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: ['Red', 'Blue', 'Yellow'],
+      datasets: [{
+        label: 'My First Doughnut Today',
+        data: [300, 50, 200, 135],
+        backgroundColor: [
+                'rgb(255, 99, 150)',
+                'rgb(50, 150, 240)',
+                'rgb(255, 200, 80)'
+        ],
+        hoverOffset: 1
+      }]
+    }
+  });
+</script>
+<br>
+<br>
+<br>
+<div style="width: 700px">
+  <canvas id="myChart2"></canvas>
+</div>
+<script>
+  var cty = document.getElementById('myChart2');
+  var myChart2 = new Chart(cty, {
+    type: 'pie',
+    data: {
+      labels: ['Red', 'Blue', 'Yellow'],
+      datasets: [{
+        label: 'Pie Chart',
+        data: [300, 50, 200],
+        backgroundColor: [
+          'rgb(255, 99, 150)',
+          'rgb(50, 150, 240)',
+          'rgb(255, 200, 80)'
+        ],
+        hoverOffset: 1
+      }]
+    }
+  });
+</script>
+<br>
+<br>
+<br>
+<div style="width: 700px">
+  <canvas id="myChart3"></canvas>
+</div>
+<script>
+  var ctz = document.getElementById('myChart3');
+  var myChart3 = new Chart(ctz, {
+    type: 'polarArea',
+    data: {
+      labels: ['Red', 'Blue', 'Yellow', 'Gray', 'Blue'],
+      datasets: [{
+        label: 'Polar Area Chart',
+        data: [11, 10, 15, 3, 2],
+        backgroundColor: [
+          'rgb(255, 100, 130)',
+          'rgb(80, 190, 190)',
+          'rgb(255, 200, 85)',
+          'rgb(201, 203, 203)',
+          'rgb(50, 160, 240)'
+        ],
+        hoverOffset: 1
+      }]
+    }
+  });
+</script>
+</body>
+</html>
