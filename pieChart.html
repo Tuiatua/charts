@@ -19,14 +19,17 @@
   var myChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
-      labels: ['Red', 'Blue', 'Yellow'],
+      labels: ['1', '2', '3', '4', '5', '6'],
       datasets: [{
         label: 'My First Doughnut Today',
-        data: [300, 50, 200, 135],
+        data: [300, 50, 200, 135, 75, 20],
         backgroundColor: [
-                'rgb(255, 99, 150)',
-                'rgb(50, 150, 240)',
-                'rgb(255, 200, 80)'
+                'rgb(249, 255, 161)',
+                'rgb(255, 240, 96)',
+                'rgb(255, 240, 96)',
+                'rgb(240, 194, 0)',
+                'rgb(231, 163, 0)',
+                'black'
         ],
         hoverOffset: 1
       }]
@@ -44,14 +47,17 @@
   var myChart2 = new Chart(cty, {
     type: 'pie',
     data: {
-      labels: ['Red', 'Blue', 'Yellow'],
+      labels: ['1', '2', '3', '4', '5', '6'],
       datasets: [{
         label: 'Pie Chart',
-        data: [300, 50, 200],
+        data: [100, 50, 250, 35, 205, 20],
         backgroundColor: [
-          'rgb(255, 99, 150)',
-          'rgb(50, 150, 240)',
-          'rgb(255, 200, 80)'
+          'rgb(254, 254, 105)',
+          'rgb(221, 249, 105)',
+          'rgb(169, 243, 106)',
+          'rgb(120, 236, 108)',
+          'rgb(87, 232, 107)',
+          'black'
         ],
         hoverOffset: 1
       }]
@@ -69,16 +75,20 @@
   var myChart3 = new Chart(ctz, {
     type: 'polarArea',
     data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Gray', 'Blue'],
+      labels: ['1', '2', '3', '4', '5', '6', '7', '8'],
       datasets: [{
         label: 'Polar Area Chart',
-        data: [11, 10, 15, 3, 2],
+        data: [16, 14, 12, 10, 8, 6, 4, 2],
         backgroundColor: [
-          'rgb(255, 100, 130)',
-          'rgb(80, 190, 190)',
-          'rgb(255, 200, 85)',
-          'rgb(201, 203, 203)',
-          'rgb(50, 160, 240)'
+          'rgb(220, 28, 19)',
+          'rgb(234, 76, 70)',
+          'rgb(240, 116, 112)',
+          'rgb(241, 149, 155)',
+          'rgb(246, 189, 192)',
+          'rgb(255,168,247)',
+          'rgb(248,139,255)',
+          'rgb(203,128,255)'
+
         ],
         hoverOffset: 1
       }]
